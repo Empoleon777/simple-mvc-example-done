@@ -209,7 +209,7 @@ const setCatName = async (req, res) => {
 };
 
 const setDogName = async (req, res) => {
-  if (!req.body.firstname || !req.body.lastname || !req.body.breed || req.body.age) {
+  if (!req.body.firstname || !req.body.lastname || !req.body.breed || !req.body.age) {
     return res.status(400).json({ error: 'firstname, lastname, breed and age are all required' });
   }
 
