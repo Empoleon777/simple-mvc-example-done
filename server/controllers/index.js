@@ -321,7 +321,7 @@ const updateDogAge = async (req, res) => {
     return res.status(404).json({ error: 'No dogs found' });
   }
 
-  return res.json({ mame: doc.name, breed: doc.breed, age: doc.age });
+  return res.json({ name: doc.name, breed: doc.breed, age: doc.age });
 };
 
 /* A function for updating the last cat added to the database.
