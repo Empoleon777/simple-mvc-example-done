@@ -241,7 +241,7 @@ const setDogName = async (req, res) => {
 
 // Function to handle searching a cat by name.
 const searchCatName = async (req, res) => {
-  /* When the user makes a POST request, bodyParser populates req.body with the parameters as we 
+  /* When the user makes a POST request, bodyParser populates req.body with the parameters as we
   saw in setCatName() above. In the case of searchCatName, the user is making a GET request.
      GET requests do not have a body, but they can have query parameters. bodyParser will also
      handle these, and store them in req.query instead.
