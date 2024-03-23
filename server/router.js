@@ -19,6 +19,7 @@ const router = (app) => {
   app.get('/page4', controllers.page4);
   app.get('/getCatName', controllers.getCatName);
   app.get('/findCatByName', controllers.searchCatName);
+  app.get('/findDogByName', controllers.searchDogName);
   app.get('/getDogName', controllers.getDogName);
 
   // whenever someone goes to the site without a path (AKA the home page), call controllers.index
@@ -36,8 +37,6 @@ const router = (app) => {
   // When someone POSTS to /updateLastCat, call controllers.updateLastCat
   app.post('/updateLastCat', controllers.updateLastCat);
   app.post('/updateLastDog', controllers.updateLastDog);
-
-  app.post('/findDogByName', controllers.searchDogName);
 };
 
 // export the router function
